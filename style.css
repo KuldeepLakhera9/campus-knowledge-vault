@@ -1,0 +1,113 @@
+/* Google-like clean font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+}
+
+/* Button */
+.search-box button {
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-box button:hover {
+  background: #1e40af;
+}
+
+/* Result cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Card title */
+.card h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+/* Card text */
+.card p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+/* AI Summary highlight */
+.card p b {
+  color: #111827;
+}
+
+/* Loading text */
+#results {
+  margin-top: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
